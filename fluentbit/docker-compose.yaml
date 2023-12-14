@@ -19,7 +19,7 @@ services:
       - monitor-net
 
   demoapp:
-    image: demo-app:latest
+    image: kduchagaslima/demo-app:opentelemetry-fluentbit 
     container_name: demo-app
     depends_on:
       - fluentbit
